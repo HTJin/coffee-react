@@ -54,7 +54,7 @@ export const App = () => {
 
   return (
     <div>
-      <Navigation isLoggedIn={loggedIn} logUserOut={logUserOut} />
+      <Navigation loggedIn={loggedIn} logUserOut={logUserOut} />
       {message && (
         <AlertMessage
           message={message}
@@ -74,7 +74,7 @@ export const App = () => {
         <Route
           path="/register"
           element={
-            <Register flashMessage={flashMessage} logUserIn={logUserIn} />
+            <Register logUserIn={logUserIn} flashMessage={flashMessage} />
           }
         />
       </Routes>
