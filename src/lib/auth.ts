@@ -9,7 +9,7 @@ export type TokenType = {
   tokenExp: string;
 };
 
-const base = "https://coffee-flask.onrender.com";
+const base = "https://coffee-flask.onrender.com/api";
 
 export const apiClientNoAuth = () => axios.create({ baseURL: base });
 export const apiClientBasicAuth = (email: string, password: string) =>

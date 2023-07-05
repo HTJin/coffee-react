@@ -24,8 +24,8 @@ export const CoffeeForm = ({
         />
         <label>Coffee Type</label>
         <input
-          name="coffeeType"
-          value={newCoffee.coffeeType}
+          name="coffee_type"
+          value={newCoffee.coffee_type}
           onChange={handleChange}
           type="text"
         />
@@ -52,8 +52,8 @@ export const CoffeeForm = ({
         />
         <label>Brew Method</label>
         <input
-          name="brewMethod"
-          value={newCoffee.brewMethod}
+          name="brew_method"
+          value={newCoffee.brew_method}
           onChange={handleChange}
           type="text"
         />

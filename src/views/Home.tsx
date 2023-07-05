@@ -15,12 +15,13 @@ export const Home = ({ user, flashMessage }: HomeProps) => {
   const [coffees, setCoffees] = useState<CoffeeType[]>([]);
   const [newCoffee, setNewCoffee] = useState<CoffeeType>({
     name: "",
-    coffeeType: "",
+    coffee_type: "",
     price: 0,
     description: "",
     rating: 0,
-    brewMethod: "",
+    brew_method: "",
     roaster: "",
+    image_url: "",
   });
   const [displayCoffee, setDisplayCoffee] = useState(false);
   const [update, setUpdate] = useState(false);
@@ -45,12 +46,13 @@ export const Home = ({ user, flashMessage }: HomeProps) => {
       setUpdate(!update);
       setNewCoffee({
         name: "",
-        coffeeType: "",
+        coffee_type: "",
         price: 0,
         description: "",
         rating: 0,
-        brewMethod: "",
+        brew_method: "",
         roaster: "",
+        image_url: "",
       });
       setDisplayCoffee(false);
       flashMessage(newCoffee.name + " brewed successfully", "success");

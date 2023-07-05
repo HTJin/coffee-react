@@ -3,13 +3,13 @@ import { UserType } from "./user";
 export type CoffeeType = {
   id?: number;
   name?: string;
-  coffeeType?: string;
+  coffee_type?: string;
   price?: number;
   description?: string;
   rating?: number;
-  brewMethod?: string;
+  brew_method?: string;
   roaster?: string;
-  imageUrl?: string;
+  image_url?: string;
   brewer?: UserType;
-  dateCreated?: string;
+  date_created?: string;
 };
