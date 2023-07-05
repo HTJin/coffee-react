@@ -27,7 +27,7 @@ export const CoffeeDisplay = ({
 
   return (
     <div>
-      <div>{coffee.name}</div>
+      <div className="text-3xl">{coffee.name}</div>
       <div>{coffee.coffee_type}</div>
       <div>{coffee.price}</div>
       <div>{coffee.description}</div>
