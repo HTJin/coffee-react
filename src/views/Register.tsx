@@ -45,6 +45,7 @@ export const Register = ({ logUserIn, flashMessage }: RegisterProps) => {
             name="username"
             value={newUser.username}
             onChange={handleInputChange}
+            type="text"
           />
         </div>
         <div>

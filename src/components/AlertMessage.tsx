@@ -11,5 +11,5 @@ export const AlertMessage = ({
   category,
   flashMessage,
 }: AlertMessageProps) => {
-  return <div>AlertMessage</div>;
+  return <div>{message}</div>;
 };
