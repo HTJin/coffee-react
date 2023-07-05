@@ -21,7 +21,6 @@ export const Home = ({ user, flashMessage }: HomeProps) => {
     rating: 0,
     brew_method: "",
     roaster: "",
-    image_url: "",
   });
   const [displayCoffee, setDisplayCoffee] = useState(false);
   const [update, setUpdate] = useState(false);
@@ -52,7 +51,6 @@ export const Home = ({ user, flashMessage }: HomeProps) => {
         rating: 0,
         brew_method: "",
         roaster: "",
-        image_url: "",
       });
       setDisplayCoffee(false);
       flashMessage(newCoffee.name + " brewed successfully", "success");
