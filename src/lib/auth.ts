@@ -1,5 +1,7 @@
 import axios from "axios";
 
+const base = "https://coffee-flask.onrender.com/api";
+
 export type APIResponse<T> = {
   error: string | undefined;
   data: T | undefined;
@@ -8,8 +10,6 @@ export type TokenType = {
   token: string;
   tokenExp: string;
 };
-
-const base = "https://coffee-flask.onrender.com/api";
 
 export const apiClientNoAuth = () => axios.create({ baseURL: base });
 export const apiClientBasicAuth = (email: string, password: string) =>

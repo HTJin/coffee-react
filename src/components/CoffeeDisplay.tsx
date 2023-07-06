@@ -17,7 +17,7 @@ export const CoffeeDisplay = ({
   update,
 }: CoffeeDisplayProps) => {
   const date = new Date(coffee.date_created as string);
-  const handleDelete = (e: MouseEvent): void => {
+  const handleDelete = (_: MouseEvent): void => {
     const token = localStorage.getItem("token");
     deleteCoffee(coffee.id!, token!);
     setTimeout(() => {
@@ -34,7 +34,6 @@ export const CoffeeDisplay = ({
       <div>{coffee.rating}</div>
       <div>{coffee.brew_method}</div>
       <div>{coffee.roaster}</div>
-      <div>{coffee.image_url}</div>
       <div className="w-48">
         <img src={coffee.image_url} alt={coffee.name} />
       </div>
