@@ -41,7 +41,10 @@ export const Home = ({ user, flashMessage }: HomeProps) => {
         roaster: "",
       });
       setDisplayCoffee(false);
-      flashMessage(newCoffee.name + " brewed successfully! Check 'Your Brews'", "success");
+      flashMessage(
+        newCoffee.name + " brewed successfully! Check 'Your Brews'",
+        "success"
+      );
     }
   };
   const handleInputChange = (
